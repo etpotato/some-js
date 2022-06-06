@@ -1,0 +1,23 @@
+{
+  "name": "some",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getFromObject.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etpotato/some-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etpotato/some-js/issues"
+  },
+  "homepage": "https://github.com/etpotato/some-js#readme",
+  "dependencies": {
+    "jest": "^28.1.0"
+  }
+}

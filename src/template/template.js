@@ -1,7 +1,7 @@
 const getFromObject = require('./getFromObject');
 
 const template = ({ text, data }) => {
-  const regex = /{\w+(.\w+)+?}/g;
+  const regex = /{\w+((.\w+)+)?}/g;
 
   return text.replace(regex, (match) => {
     const path = match.slice(1, -1);

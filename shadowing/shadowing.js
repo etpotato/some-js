@@ -4,7 +4,8 @@ let arrSort = [];
 function arraySorted(arrUnSort, arrSort) {
   // same as: var arrSort =
   arrSort = arrUnSort.sort();
+  console.log('inside', arrSort);
 }
 
 arraySorted(arrUnSort, arrSort);
-console.log(arrSort);
+console.log('outside', arrSort);

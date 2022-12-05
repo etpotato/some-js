@@ -3,9 +3,10 @@ let arrSort = [];
 
 function arraySorted(arrUnSort, arrSort) {
   // same as: var arrSort =
-  arrSort = arrUnSort.sort();
+  arrSort = arrUnSort.sort((a,b) => a - b);
   console.log('inside', arrSort);
 }
 
 arraySorted(arrUnSort, arrSort);
 console.log('outside', arrSort);
+console.log('unsort', arrUnSort);

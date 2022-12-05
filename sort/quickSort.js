@@ -16,7 +16,7 @@ const partition = (arr, left, right) => {
       left++;
       right--;
     }
-  };
+  }
 
   return left;
 };

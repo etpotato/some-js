@@ -38,14 +38,14 @@ class BinaryMaxHeap {
       const rightChildIndex = leftChildIndex + 1;
       const rightChild = this._heap[rightChildIndex];
 
-      if ((!leftChild || rightChild > leftChild) && rightChild > lastItem) {
+      if ((leftChild === undefined || rightChild > leftChild) && rightChild > lastItem) {
         this._heap[index] = rightChild;
         this._heap[rightChildIndex] = lastItem;
         index = rightChildIndex;
         continue;
       }
 
-      if (leftChild && leftChild > lastItem) {
+      if (leftChild !== undefined && leftChild > lastItem) {
         this._heap[index] = leftChild;
         this._heap[leftChildIndex] = lastItem;
         index = leftChildIndex;
